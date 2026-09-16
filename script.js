@@ -11,7 +11,7 @@ for(let i = 0; i < n; i++)
         let child = document.createElement('p')
         grid.appendChild(child)
         childs[i][j] = child
-        if(Math.random() < 0.2) childs[i][j].textContent = rock
+        if(Math.random() < 0.2 && i != n - 1 && j != n - 1) childs[i][j].textContent = rock
         if(i == n - 1 && j == n - 1) childs[i][j].style.backgroundColor = 'green'
     }
 }
